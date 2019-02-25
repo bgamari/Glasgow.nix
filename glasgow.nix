@@ -1,10 +1,16 @@
-{ lib, python, buildPythonPackage, migen, pyvcd, bitarray, crcmod, fx2, colorama, sdcc, versioneer }:
+{ lib, python, buildPythonPackage,
+  migen, pyvcd, bitarray, crcmod, fx2, colorama, sdcc, versioneer,
+  yosys, arachne-pnr, nextpnr, icestorm
+}:
 
 buildPythonPackage {
   pname = "glasgow";
   version = "0.1";
   src = ../.;
-  propagatedBuildInputs = [ migen pyvcd bitarray crcmod fx2 colorama versioneer ];
+  propagatedBuildInputs = [
+    migen pyvcd bitarray crcmod fx2 colorama versioneer
+    yosys arachne-pnr nextpnr icestorm
+  ];
   buildInputs = [ sdcc ];
   doCheck = false;
   preConfigure = ''
