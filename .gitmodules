@@ -1,0 +1,3 @@
+[submodule "Glasgow"]
+	path = Glasgow
+	url = https://github.com/whitequark/Glasgow

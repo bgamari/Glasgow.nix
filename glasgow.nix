@@ -6,7 +6,7 @@
 buildPythonPackage {
   pname = "glasgow";
   version = "0.1";
-  src = ../.;
+  src = ./Glasgow;
   propagatedBuildInputs = [
     migen pyvcd bitarray crcmod fx2 colorama versioneer
     yosys arachne-pnr nextpnr icestorm
