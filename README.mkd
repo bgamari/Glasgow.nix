@@ -1,0 +1,4 @@
+# Glasgow.nix
+
+This is a Nix expression packaging the tools for the [Glasgow hardware
+debugging tool](https://github.com/whitequark/Glasgow/).
