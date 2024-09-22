@@ -1,23 +1,21 @@
-{ lib, python, buildPythonPackage,
-  migen, pyvcd, bitarray, crcmod, fx2, colorama, sdcc, versioneer, aiohttp,
-  yosys, arachne-pnr, nextpnr, icestorm
+{ lib, python, buildPythonPackage, pdm-backend,
+  src,
+  amaranth, pyvcd, bitarray, crcmod, fx2, colorama, sdcc, versioneer, aiohttp,
+  yosys, arachne-pnr, nextpnr, icestorm,
+  platformdirs, packaging
 }:
 
 buildPythonPackage {
   pname = "glasgow";
   version = "0.1";
-  src = ./Glasgow;
+  inherit src;
+  build-system = [ pdm-backend ];
   propagatedBuildInputs = [
-    migen pyvcd bitarray crcmod fx2 colorama versioneer
+    amaranth pyvcd bitarray crcmod fx2 colorama versioneer
     yosys arachne-pnr nextpnr icestorm aiohttp
+    platformdirs packaging
   ];
-  buildInputs = [ sdcc ];
   doCheck = false;
-  preConfigure = ''
-    make -Cvendor/libfx2/firmware
-    cd software
-  '';
-  preBuild = ''
-    ${python.interpreter} setup.py build_ext -i
-  '';
+  sourceRoot = "source/software";
+  format = "pyproject";
 }
