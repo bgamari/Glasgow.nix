@@ -2,7 +2,8 @@
   src,
   amaranth, pyvcd, bitarray, crcmod, fx2, colorama, sdcc, versioneer, aiohttp,
   yosys, arachne-pnr, nextpnr, icestorm,
-  platformdirs, packaging
+  platformdirs, packaging,
+  typing-extensions, cobs
 }:
 
 buildPythonPackage {
@@ -13,6 +14,7 @@ buildPythonPackage {
   propagatedBuildInputs = [
     amaranth pyvcd bitarray crcmod fx2 colorama versioneer
     yosys arachne-pnr nextpnr icestorm aiohttp
+    typing-extensions cobs
     platformdirs packaging
   ];
   doCheck = false;
