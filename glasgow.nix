@@ -2,7 +2,7 @@
   src,
   amaranth, pyvcd, bitarray, crcmod, fx2, colorama, sdcc, versioneer, aiohttp,
   yosys, arachne-pnr, nextpnr, icestorm,
-  platformdirs, packaging,
+  platformdirs, packaging, importlib-resources,
   typing-extensions, cobs
 }:
 
@@ -15,7 +15,7 @@ buildPythonPackage {
     amaranth pyvcd bitarray crcmod fx2 colorama versioneer
     yosys arachne-pnr nextpnr icestorm aiohttp
     typing-extensions cobs
-    platformdirs packaging
+    platformdirs packaging importlib-resources
   ];
   doCheck = false;
   sourceRoot = "source/software";

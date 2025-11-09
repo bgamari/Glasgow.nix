@@ -21,11 +21,11 @@
     "glasgow": {
       "flake": false,
       "locked": {
-        "lastModified": 1751042978,
-        "narHash": "sha256-yovfgpOPwnpuh3GRDhO9JJJbZQWBhBFvby9xsh9UzfA=",
+        "lastModified": 1762403383,
+        "narHash": "sha256-dv9qWNWOuOqgzs//pDl/T/REnrteSnyf8Ml0iPMUGiU=",
         "owner": "GlasgowEmbedded",
         "repo": "Glasgow",
-        "rev": "b078da605ccda01ad25f49c337b9430ede0ae44c",
+        "rev": "16c51fb5126d490b1b4a442c2cfa15a61e4dad59",
         "type": "github"
       },
       "original": {
@@ -54,11 +54,11 @@
     "migen": {
       "flake": false,
       "locked": {
-        "lastModified": 1749544952,
-        "narHash": "sha256-NshlPiORBHWljSUP5bB7YBxe7k8dW0t8UXOsIq2EK8I=",
+        "lastModified": 1759465137,
+        "narHash": "sha256-gRAvl5cUvrjq4t7htXsDBt4F8MEbHXFZoS0jbhrEs1I=",
         "owner": "m-labs",
         "repo": "migen",
-        "rev": "6e3a9e150fb006dabc4b55043d3af18dbfecd7e8",
+        "rev": "147f003fb7076ac4c7cf76a9a5ce152dc10e0ca6",
         "type": "github"
       },
       "original": {
@@ -69,11 +69,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1751125002,
-        "narHash": "sha256-DcQaq0WDxTWoEPErSYS90FjMUI4Q+LyT7QdmelT3Q1A=",
+        "lastModified": 1762656657,
+        "narHash": "sha256-G/l8mwS+RV4RoKT/Cc6NwV6R1lHvVJqhQOZSyDHDH/Q=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "9f78ac9c1d3fb12b77bcc2e346a4f0fc0603f8ba",
+        "rev": "f780f1f7c70e69a5f13e91aff938b0d49c15273b",
         "type": "github"
       },
       "original": {
